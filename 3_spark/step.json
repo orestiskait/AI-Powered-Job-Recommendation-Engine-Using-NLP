@@ -1,0 +1,16 @@
+[
+    {
+        "Name": "Spark JOB processing",
+        "Type": "Spark",
+        "ActionOnFailure": "CONTINUE",
+        "Args": [
+            "--deploy-mode",
+            "cluster",
+            "--master",
+            "yarn",
+            "--conf",
+            "spark.yarn.submit.waitAppCompletion=true",
+            "s3://cse6242-t2-raw/application/process.py"
+        ]
+    }
+]

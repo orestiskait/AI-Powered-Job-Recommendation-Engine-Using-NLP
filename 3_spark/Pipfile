@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.org/simple"
+name = "pypi"
+verify_ssl = true
+
+[dev-packages]
+
+[requires]
+python_version = "3.4"
+
+[packages]
+boto3 = "*"
+spacy = "*"

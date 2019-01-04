@@ -1,0 +1,37 @@
+[
+    {
+        "Classification": "capacity-scheduler",
+        "Properties": {
+            "yarn.scheduler.capacity.resource-calculator": "org.apache.hadoop.yarn.util.resource.DominantResourceCalculator"
+        }
+    },
+    {
+        "Classification": "spark-env",
+        "Configurations": [
+            {
+                "Classification": "export",
+                "Properties": {
+                    "PYSPARK_PYTHON": "/usr/bin/python3"
+                }
+            }
+        ]
+    },
+    {
+        "Classification": "spark",
+        "Properties": {
+            "maximizeResourceAllocation": "true"
+        }
+    },
+    {
+        "Classification": "spark-defaults",
+        "Properties": {
+            "spark.executor.memory": "5520M"
+        }
+    },
+    {
+        "Classification": "yarn-site",
+        "Properties": {
+            "yarn.nodemanager.vmem-check-enabled": "false"
+        }
+    }
+]
